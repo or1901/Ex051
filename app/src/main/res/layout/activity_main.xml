@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
 
         <Space
             android:layout_width="0dp"
@@ -22,7 +34,8 @@
                 android:id="@+id/txt1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform" />
 
             <Space
                 android:layout_width="match_parent"
@@ -33,7 +46,8 @@
                 android:id="@+id/txt2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -44,7 +58,7 @@
                 android:id="@+id/et1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"
+                android:layout_weight="2"
                 android:ems="10"
                 android:hint="Sum"
                 android:inputType="number" />
@@ -59,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+                android:onClick="checkSum"
                 android:text="Done" />
 
             <Space
@@ -88,7 +103,8 @@
                 android:id="@+id/txt3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -99,7 +115,8 @@
                 android:id="@+id/txt4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -110,7 +127,7 @@
                 android:id="@+id/et2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"
+                android:layout_weight="2"
                 android:ems="10"
                 android:hint="Sum"
                 android:inputType="number" />
@@ -125,6 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+                android:onClick="checkSum"
                 android:text="Done" />
 
             <Space
@@ -154,7 +172,8 @@
                 android:id="@+id/txt5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -165,7 +184,8 @@
                 android:id="@+id/txt6"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -176,7 +196,7 @@
                 android:id="@+id/et3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"
+                android:layout_weight="2"
                 android:ems="10"
                 android:hint="Sum"
                 android:inputType="number" />
@@ -191,6 +211,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+                android:onClick="checkSum"
                 android:text="Done" />
 
             <Space
@@ -199,7 +220,7 @@
                 android:layout_weight="1" />
 
             <ImageView
-                android:id="@+id/iv"
+                android:id="@+id/iv3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3" />
@@ -209,6 +230,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="restart"
+            android:text="Restart" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
 
